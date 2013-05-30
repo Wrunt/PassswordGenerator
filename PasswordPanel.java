@@ -16,10 +16,11 @@ public class PasswordPanel extends JPanel {
     private JButton gen;
    
     public PasswordPanel() {
-        
+        //uses label instead of text field so it's highlightable
         lPass = new JTextField ("Password will be here.");
         lPass.setBorder(null);
         lPass.setBackground(null);
+        lPass.setEditable(false);
         lPass.setAlignmentX (Component.LEFT_ALIGNMENT);
         
         length = new JTextField ("Enter length - default is 12");
