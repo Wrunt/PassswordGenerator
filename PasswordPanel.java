@@ -122,10 +122,8 @@ public class PasswordPanel extends JPanel {
                 builder.append(sPassCurr);
                 
                 cPass = 0;
-                sPass = "";
                 sPassCurr = "";
                 numP = 0;
-                passLength = 0;
                 var1 = 0;
                 var2 = 0;
                 
