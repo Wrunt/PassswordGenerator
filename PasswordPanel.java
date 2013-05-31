@@ -5,10 +5,9 @@
 package password.generator;
 import java.awt.*;
 import java.awt.event.*;
-import java.lang.*;
+import java.security.SecureRandom;
 import java.util.*;
 import javax.swing.*;
-import javax.swing.event.*;
 
 public class PasswordPanel extends JPanel {
     private JPanel controls;
@@ -16,7 +15,7 @@ public class PasswordPanel extends JPanel {
     private JButton gen;
    
     public PasswordPanel() {
-        //uses text field instead of label so it's highlightable
+        //uses label instead of text field so it's highlightable
         lPass = new JTextField ("Password will be here.");
         lPass.setBorder(null);
         lPass.setBackground(null);
@@ -49,7 +48,7 @@ public class PasswordPanel extends JPanel {
         private String sPass, sPassCurr, text;
         
         public void actionPerformed (ActionEvent event) {
-            Random type = new Random ();
+            SecureRandom type = new SecureRandom();
             StringBuilder builder = new StringBuilder();
             
             cPass = 0;
