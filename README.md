@@ -10,6 +10,7 @@ enter desired password length (preferred between 8 and 20 characters - default l
 click "Generate!" button
 copy password to safe location (password will not be saved) as to company and/or personal guidelines
 
+v1.3: more secure re-write
 v1.2: bugfix
 v1.1: Streamlined code (cut down on half of code)
 v1: Initial Release
